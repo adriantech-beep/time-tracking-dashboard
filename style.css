@@ -1,0 +1,522 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Rubik", sans-serif;
+}
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100dvh;
+  width: 100vw;
+  background-color: #0e1323;
+}
+.container {
+  width: 100vw;
+  max-width: 1100px;
+  height: 32.375em;
+  display: flex;
+  gap: 10px;
+}
+/**********First Card*********/
+.first-card {
+  width: 30%;
+  max-width: 255px;
+  height: 518px;
+  flex-shrink: 0;
+  background-color: #1c204b;
+  border-radius: 0.9375em;
+  margin-right: 1em;
+}
+.first-card-upper {
+  width: 100%;
+  max-width: 255px;
+  height: 354px;
+  background-color: #5747ea;
+  border-radius: 0.9375em;
+  display: flex;
+  flex-direction: column;
+}
+.first-card-info {
+  width: 100%;
+  max-width: 100px;
+  margin-top: 2em;
+  margin-left: 1.8em;
+}
+.first-card-info img {
+  width: 78px;
+  border: 3px solid #ffff;
+  border-radius: 50%;
+}
+.first-card-info p {
+  font-weight: 200;
+  font-size: 0.9375rem;
+  color: #bbc0ff;
+  margin-top: 2em;
+}
+.first-card-info h2 {
+  font-weight: 100;
+  font-size: 2.5rem;
+  color: #ffffff;
+}
+.first-card-dates {
+  width: 100%;
+  max-width: 68px;
+  height: 106px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 2em 0 0 2em;
+}
+.first-card-dates p {
+  font-size: 1.125rem;
+  color: #7078c9;
+  font-weight: 400;
+}
+.first-card-dates p:hover {
+  color: #ffff;
+  cursor: pointer;
+}
+/**********div of all small cards***********/
+
+.small-cards {
+  width: 100%;
+  max-width: 820px;
+  height: 518px;
+  display: grid;
+  gap: 1.5em;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+/********Second Card**********/
+.second-card {
+  width: 100%;
+  max-width: 255px;
+  height: 160px;
+  position: relative;
+}
+
+.second-card-upper {
+  width: 100%;
+  max-width: 255px;
+  height: 160px;
+  background-color: #ff8b64;
+  border-radius: 15px;
+  position: relative;
+  overflow: hidden;
+}
+
+.second-card-upper img {
+  width: auto;
+  color: #d96c47;
+  display: flex;
+  position: absolute;
+  right: 1em;
+  bottom: 5.5em;
+}
+.second-card-lower,
+.third-card-lower,
+.fourth-card-lower,
+.fifth-card-lower,
+.sixth-card-lower,
+.seventh-card-lower {
+  width: 100%;
+  max-width: 255px;
+  height: 199px;
+  position: absolute;
+  top: 3em;
+  background-color: #1c204b;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  border-radius: 15px;
+}
+.second-card-lower:hover,
+.third-card-lower:hover,
+.fourth-card-lower:hover,
+.fifth-card-lower:hover,
+.sixth-card-lower:hover,
+.seventh-card-lower:hover {
+  background-color: #33397a;
+  cursor: pointer;
+}
+.second-card-lower-info,
+.third-card-lower-info,
+.fourth-card-lower-info,
+.fifth-card-lower-info,
+.sixth-card-lower-info,
+.seventh-card-lower-info {
+  width: 100%;
+  max-width: 190px;
+  height: 22px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.second-card-lower-info p,
+.third-card-lower-info p,
+.fourth-card-lower-info p,
+.fifth-card-lower-info p,
+.sixth-card-lower-info p,
+.seventh-card-lower-info p {
+  color: #ffffff;
+}
+.second-card-lower-dates,
+.third-card-lower-dates,
+.fourth-card-lower-dates,
+.fifth-card-lower-dates,
+.sixth-card-lower-dates,
+.seventh-card-lower-dates {
+  width: 80%;
+}
+.second-card-lower-dates h1,
+.third-card-lower-dates h1,
+.fourth-card-lower-dates h1,
+.fifth-card-lower-dates h1,
+.sixth-card-lower-dates h1,
+.seventh-card-lower-dates h1 {
+  font-size: 56px;
+  font-weight: 200;
+  color: white;
+}
+.second-card-lower-dates p,
+.third-card-lower-dates p,
+.fourth-card-lower-dates p,
+.fifth-card-lower-dates p,
+.sixth-card-lower-dates p,
+.seventh-card-lower-dates p {
+  font-size: 0.9375rem;
+  color: #bbc0ff;
+}
+
+/********Third Card************/
+
+.third-card {
+  width: 100%;
+  max-width: 255px;
+  height: 160px;
+  position: relative;
+}
+.third-card-upper {
+  width: 100%;
+  max-width: 255px;
+  height: 160px;
+  background-color: #55c2e6;
+  border-radius: 15px;
+  position: relative;
+  overflow: hidden;
+}
+.third-card-upper img {
+  width: auto;
+  color: #d96c47;
+  display: flex;
+  position: absolute;
+  right: 1em;
+  bottom: 5.5em;
+}
+.third-card-lower-info {
+  width: 100%;
+  max-width: 190px;
+  height: 22px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+/*******fourth card********/
+
+.fourth-card {
+  width: 100%;
+  max-width: 255px;
+  height: 160px;
+  position: relative;
+}
+.fourth-card-upper {
+  width: 100%;
+  max-width: 255px;
+  height: 160px;
+  background-color: #ff5e7d;
+  border-radius: 15px;
+  position: relative;
+  overflow: hidden;
+}
+
+.fourth-card-upper img {
+  width: auto;
+  color: #f04667;
+  display: flex;
+  position: absolute;
+  right: 1em;
+  bottom: 5.5em;
+}
+.fourth-card-lower-info {
+  width: 100%;
+  max-width: 190px;
+  height: 22px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+/**********Fifth Card****************/
+
+.fifth-card {
+  width: 100%;
+  max-width: 255px;
+  height: 160px;
+  position: relative;
+}
+
+.fifth-card-upper {
+  width: 100%;
+  max-width: 255px;
+  height: 160px;
+  background-color: #4bcf82;
+  border-radius: 15px;
+  position: relative;
+  overflow: hidden;
+}
+.fifth-card-upper img {
+  width: auto;
+  color: #29ba66;
+  display: flex;
+  position: absolute;
+  right: 1em;
+  bottom: 6.5em;
+}
+.fifth-card-lower-info {
+  width: 100%;
+  max-width: 190px;
+  height: 22px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+/*********Sixth Card***************/
+
+.sixth-card {
+  width: 100%;
+  max-width: 255px;
+  height: 160px;
+  position: relative;
+}
+.sixth-card-upper {
+  width: 100%;
+  max-width: 255px;
+  height: 160px;
+  background-color: #7335d2;
+  border-radius: 15px;
+  position: relative;
+  overflow: hidden;
+}
+
+.sixth-card-upper img {
+  width: auto;
+  color: #29ba66;
+  display: flex;
+  position: absolute;
+  right: 1em;
+  bottom: 4.8em;
+}
+.sixth-card-lower-info {
+  width: 100%;
+  max-width: 190px;
+  height: 22px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+/********Seventh Card*******************/
+
+.seventh-card {
+  width: 100%;
+  max-width: 255px;
+  height: 160px;
+  position: relative;
+}
+.seventh-card-upper {
+  width: 100%;
+  max-width: 255px;
+  height: 160px;
+  background-color: #f1c75b;
+  border-radius: 15px;
+  position: relative;
+  overflow: hidden;
+}
+.seventh-card-upper img {
+  width: auto;
+  color: #e6a532;
+  display: flex;
+  position: absolute;
+  right: 1em;
+  bottom: 6.5em;
+}
+.seventh-card-lower-info {
+  width: 100%;
+  max-width: 190px;
+  height: 22px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+@media (max-width: 550px) {
+  body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50dvh;
+    width: 100vw;
+    background-color: #0e1323;
+  }
+  .container {
+    width: 100vw;
+    max-width: 327px;
+    height: 203px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .first-card {
+    width: 100%;
+    max-width: 327px;
+    height: 203px;
+    flex-shrink: 0;
+    background-color: #1c204b;
+    border-radius: 0.9375em;
+    margin-right: 1em;
+  }
+  .first-card-upper {
+    width: 100%;
+    max-width: 327px;
+    height: 133px;
+    background-color: #5747ea;
+    border-radius: 0.9375em;
+    display: flex;
+    flex-direction: column;
+  }
+  .first-card-info {
+    width: 100%;
+    max-width: 300px;
+    display: flex;
+    margin-top: 1em;
+    margin-left: 1em;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+  .first-card-details {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 1em;
+  }
+  .first-card-info p {
+    font-weight: 200;
+    font-size: 0.9375rem;
+    color: #bbc0ff;
+    margin-top: 2em;
+  }
+  .first-card-info h2 {
+    font-weight: 100;
+    font-size: 24px;
+    color: #ffffff;
+  }
+  .first-card-dates {
+    max-width: 280px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    margin: 0.5em 0 0 1.5em;
+  }
+  .first-card-dates p {
+    font-size: 1.125rem;
+    color: #7078c9;
+    font-weight: 400;
+  }
+
+  .small-cards {
+    max-width: 327px;
+    height: 1200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .second-card,
+  .third-card,
+  .fourth-card,
+  .fifth-card,
+  .sixth-card,
+  .seventh-card {
+    max-width: 327px;
+    height: 160px;
+    position: relative;
+  }
+  .second-card-upper,
+  .third-card-upper,
+  .fourth-card-upper,
+  .fifth-card-upper,
+  .sixth-card-upper,
+  .seventh-card-upper {
+    width: 100%;
+    max-width: 327px;
+    height: 160px;
+  }
+  .second-card-lower,
+  .third-card-lower,
+  .fourth-card-lower,
+  .fifth-card-lower,
+  .sixth-card-lower,
+  .seventh-card-lower {
+    max-width: 327px;
+    height: 122px;
+    position: absolute;
+    top: 3em;
+    background-color: #1c204b;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 15px;
+  }
+  .second-card-lower-dates,
+  .third-card-lower-dates,
+  .fourth-card-lower-dates,
+  .fifth-card-lower-dates,
+  .sixth-card-lower-dates,
+  .seventh-card-lower-dates {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 80%;
+  }
+  .second-card-lower-info,
+  .third-card-lower-info,
+  .fourth-card-lower-info,
+  .fifth-card-lower-info,
+  .sixth-card-lower-info,
+  .seventh-card-lower-info {
+    max-width: 250px;
+    margin-bottom: 0.8em;
+    display: flex;
+    justify-content: space-between;
+  }
+  .second-card-lower-dates h1,
+  .third-card-lower-dates h1,
+  .fourth-card-lower-dates h1,
+  .fifth-card-lower-dates h1,
+  .sixth-card-lower-dates h1,
+  .seventh-card-lower-dates h1 {
+    font-size: 2rem;
+    font-weight: 200;
+    color: white;
+  }
+  .second-card-lower-dates p,
+  .third-card-lower-dates p,
+  .fourth-card-lower-dates p,
+  .fifth-card-lower-dates p,
+  .sixth-card-lower-dates p,
+  .seventh-card-lower-dates p {
+    font-size: 0.9375rem;
+    color: #bbc0ff;
+  }
+}
